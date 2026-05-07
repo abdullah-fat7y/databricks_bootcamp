@@ -1,6 +1,8 @@
-# Databricks Lakehouse Project
+# Bike Data Lakehouse
 
-This repository contains hands-on practice with Databricks, Apache Spark, and the Lakehouse architecture.
+This project demonstrates the implementation of a complete Data Lakehouse using Databricks, Apache Spark, and the Medallion Architecture.
+
+The pipeline transforms raw CSV data into clean and analytics-ready datasets through Bronze, Silver, and Gold layers.
 
 ## Technologies
 
@@ -8,25 +10,49 @@ This repository contains hands-on practice with Databricks, Apache Spark, and th
 - PySpark
 - Apache Spark
 - Databricks
+- Delta Lake
 - Git & GitHub
 
-## Project Overview
+## Architecture
 
-The project demonstrates:
-- Data ingestion and transformation
-- Spark DataFrame operations
-- ETL workflows
-- Distributed data processing
-- GitHub integration with Databricks
+The project follows the Medallion Architecture:
+
+- Bronze Layer: Raw data ingestion from source CSV files
+- Silver Layer: Data cleaning, validation, and transformation
+- Gold Layer: Business-ready dimensional models for analytics
+
+## Features
+
+- End-to-end ETL pipeline
+- Bronze, Silver, and Gold data layers
+- Data quality validation
+- Dimensional modeling
+- Automated orchestration with Databricks Jobs
+- GitHub integration with Databricks Repos
+
+## Repository Structure
+
+```bash
+.
+├── bronze/
+├── silver/
+│   ├── crm/
+│   └── erp/
+├── gold/
+├── orchestration/
+├── datasets/
+└── README.md
+```
 
 ## Learning Objectives
 
-Through this project, I practiced:
-- Working with Databricks Repos
-- Using PySpark for data processing
-- Understanding Lakehouse architecture
-- Building scalable data workflows
-- Managing datasets with GitHub
+This project helped me practice:
+- Building scalable Lakehouse architectures
+- Using PySpark for distributed data processing
+- Data transformation and validation
+- ETL pipeline orchestration
+- Data modeling using fact and dimension tables
+- Managing projects with GitHub and Databricks
 
 ## Author
 
